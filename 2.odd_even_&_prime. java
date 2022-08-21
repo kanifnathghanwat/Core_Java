@@ -1,0 +1,39 @@
+class harshad{
+	public static void main(String args[])
+	{
+		int no=9;
+		int i=0;
+		
+		if(no%2==0)
+		{
+			System.out.println("This is even number");
+			int a=no;
+			int b=1;
+			while(a>0)
+			{
+				b=b*a;
+				a--;
+			}
+			System.out.println("Factorial of Number is ");
+			System.out.print(b);	
+		}
+		else
+		{
+			System.out.println(no + "is Odd number");
+			int a=2;
+			int count=0;
+			while(a<=no/2)
+			{
+				if(no%a==0)
+				{
+					count++;
+				}
+			a++;
+			}
+			if(count>0)
+				System.out.println(no + "is Not Prime");
+			else
+				System.out.println(no + "is Prime Number");
+		}
+	}
+}
